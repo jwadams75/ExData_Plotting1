@@ -18,7 +18,7 @@ power.data$Date <- as.Date(power.data$Date, format = "%d/%m/%Y")
 #Reduces the data set to the two dates needed for the project
 power.data <- power.data[Date >= "2007-02-01" & Date <= "2007-02-02",]
 
-#Graph 2
+#Plot 2
 power.data$Global_active_power <- as.numeric(as.character(power.data$Global_active_power))
 date.time <- as.POSIXct(paste(power.data$Date, power.data$Time))
 png ("plot2.png", width = 480, height = 480)
