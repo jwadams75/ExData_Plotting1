@@ -18,7 +18,7 @@ power.data$Date <- as.Date(power.data$Date, format = "%d/%m/%Y")
 #Reduces the data set to the two dates needed for the project
 power.data <- power.data[Date >= "2007-02-01" & Date <= "2007-02-02",]
 
-#Graph 1
+#Plot 1
 power.data$Global_active_power <- as.numeric(as.character(power.data$Global_active_power))
 png("plot1.png", width = 480, height = 480)
 hist(power.data$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
